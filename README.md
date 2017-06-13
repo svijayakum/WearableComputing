@@ -1,9 +1,9 @@
-#Files in this repo
+# Files in this repo  
 README.md – This is the README.md  
 CodeBook.md - Describes variables, data and the transformations performed  
 run_analysis.R - actual R code 
  
-##Purpose of run_analysis.R 
+## Purpose of run_analysis.R 
 Create an R script called run_analysis.R that does the following:    
 1. Merges the training and the test sets to create one data set.    
 2. Extracts only the measurements on the mean and standard deviation for each measurement.    
@@ -24,8 +24,9 @@ It should run in a folder called getting_and_cleaning_data (ie I created a getti
 These files can be obtained from the following location - https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 The output is created in working directory with the name mean_subject_activity.txt
 
-##The Script
-It follows the purpose step by step.
+## The Script    
+
+Purpose step by step:
 
 **Step 1:**
 + Read in all the test and training files: subject_test.txt, subject_train.txt, X_test.txt, X_train.txt, y_test.txt, y_train.txt
