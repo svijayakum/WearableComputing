@@ -1,7 +1,6 @@
 # Files in this repo  
-README.md – This is the README.md  
 CodeBook.md - Describes variables, data and the transformations performed  
-run_analysis.R - actual R code 
+run_analysis.R - R code for analysis performed 
  
 ## Purpose of run_analysis.R 
 Create an R script called run_analysis.R that does the following:    
@@ -30,18 +29,18 @@ Purpose step by step:
 
 **Step 1:**
 + Read in all the test and training files: subject_test.txt, subject_train.txt, X_test.txt, X_train.txt, y_test.txt, y_train.txt
-+ Combine the test and training sets. I interpreted this step as wanting us to create one data set for each of the file type. The “subject” data set contains the combined test and training set for the subjects. The “X” data set contains the combined test and training set for the measurements. The “y” data set contains the combined test and training set for the activities performed. 
++ Combine the test and training sets. I interpreted this step as wanting us to create one data set for each of the file type. The â€œsubjectâ€ data set contains the combined test and training set for the subjects. The â€œXâ€ data set contains the combined test and training set for the measurements. The â€œyâ€ data set contains the combined test and training set for the activities performed. 
 
 **Step 2:**
-+ Read the features from features.txt. Then assign the measurement names to the “X” data set.  
-+ List out the measurements that contain either “meancols” or “stdcols”. For this assignment I included all mean and standard deviations for each measurement including meanFreq. 
++ Read the features from features.txt. Then assign the measurement names to the â€œXâ€ data set.  
++ List out the measurements that contain either â€œmeancolsâ€ or â€œstdcolsâ€. For this assignment I included all mean and standard deviations for each measurement including meanFreq. 
 + Extract the desired mean and std columns and combine to create a data set for the desired measurements(meanstdX).
 
 **Step 3:**
 + Read in the activity labels from activity_labels.txt and replace the activity numbers with the text.
 
 **Step 4:**
-+ Assign column names for “subject” and “y” data sets and combine with the “meanstdX” dataset to create the “meanstd” data set.
++ Assign column names for â€œsubjectâ€ and â€œyâ€ data sets and combine with the â€œmeanstdXâ€ dataset to create the â€œmeanstdâ€ data set.
 + Tidy the colnames by removing all non-alphanumeric characters and converting the result to lowercase.
 
 **Step 5:**
